@@ -8,9 +8,10 @@ body {
 
 header {
     background: #313A5A;
+    border-bottom: 1px solid transparent;
 }
-header .wrapper {
-    max-width: 1440px;
+.wrapper {
+    max-width: 1257px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 5px;
@@ -191,11 +192,92 @@ header .wrapper:after {
     float: right;
     margin-top: -87px;
     margin-right: 41px;
+    font-size: 0;
+
 }
 .header-img {
     width: 100%;
     max-width: 463px;
 }
+
+main {
+    background-color: #F8F9FC;
+    border-top: 1px solid transparent;
+    padding-bottom: 200px;
+}
+
+.dignity {
+    max-width: 1257px;
+    background-color: #fff;
+    box-shadow: 0 10px 34px rgba(210, 210, 210, 0.5);
+    border-radius: 6px;
+    margin-top: -100px;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 100;
+    padding: 60px 0 80px 75px;
+}
+.dignity .dignity-item:last-child {
+    margin-right: 0;
+}
+
+.dignity-item {
+    display: inline-block;
+    max-width: 300px;
+    position: relative;
+    margin-right: 100px;
+}
+
+
+.dignity-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #1fdb84;
+    top: 50%;
+    left: 0;
+}
+.dignity-item-img-container {
+    width: 72px;
+    height: 72px;
+    background-color: #E9FBF3;
+    text-align: center;
+    border-radius: 6px;
+    line-height: 72px;
+    margin-bottom: 26px;
+}
+
+
+.dignity-item-heading {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #031D5B;
+    margin-bottom: 56px;
+}
+.dignity-item-img {
+    vertical-align: middle;
+}
+
+.dignity-item-discription {
+    font-size: 16px;
+    line-height: 32px;
+    color: #5B6C94;
+}
+
+.paid-heading {
+    color: #32325C;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 64px;
+    font-size: 40px;
+}
+
+
 
 
 
@@ -210,6 +292,7 @@ header .wrapper:after {
         max-width: 38%;
         margin-right: 0;
     }
+
     .header-heading {
         padding-right: 0;
         font-size: 40px;
