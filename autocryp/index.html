@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
@@ -13,29 +16,48 @@
 
 <header>
 
-    <div class="wrapper">
-        <div class="top-line">
-            <div class="burger-button" id="bur-button">
-                <div class="burger-item"></div>
-                <div class="burger-item"></div>
-                <div class="burger-item"></div>
-            </div>
-            <div class="logo-container">
-                <a href="index.html" class="logo">autocryp</a>
-            </div>
-            <nav class="header-navigation" id="header-nav">
-                <ul class="navigation-list">
-                    <li class="navigation-item"><a href="#" class="navigation-link">Benefit</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Pricing</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Testimonials</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Client</a></li>
-                </ul>
-            </nav>
-            <div class="user_area">
-                <a href="#" class="login-button">Login</a>
-                <a href="#" class="register-button">Register</a>
+    <div class="drop-down" id="dropDown">
+        <div class="wrapper">
+            <div class="top-line">
+                <div class="burger-button" id="bur-button">
+                    <div class="burger-item"></div>
+                    <div class="burger-item"></div>
+                    <div class="burger-item"></div>
+                </div>
+                <div class="logo-container">
+                    <a href="index.html" class="logo">autocryp</a>
+                </div>
+                <nav class="header-navigation" id="header-nav">
+                    <ul class="navigation-list">
+
+                        <li class="navigation-item">
+                            <a href="#benefit" class="navigation-link">Benefit</a>
+                        </li>
+
+                        <li class="navigation-item">
+                            <a href="#pricing" class="navigation-link">Pricing</a>
+                        </li>
+
+                        <li class="navigation-item">
+                            <a href="#testimonials" class="navigation-link">Testimonials</a>
+                        </li>
+
+                        <li class="navigation-item">
+                            <a href="#client" class="navigation-link">Client</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="user_area">
+                    <a href="#" class="login-button">Login</a>
+                    <a href="#" class="register-button button">Register</a>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="wrapper">
+
         <div class="header-content">
             <h1 class="header-heading">
                 Easiest way to mining your bitcoin
@@ -45,7 +67,7 @@
                 Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation.
             </p>
             <div class="header-content-button-container">
-                <a href="#" class="header-content-button">Get Started</a>
+                <a href="#" class="header-content-button button">Get Started</a>
             </div>
         </div>
         <div class="header-img-container">
@@ -57,7 +79,7 @@
 <main>
     <div class="wrapper">
 
-        <div class="dignity">
+        <div class="dignity" id="benefit">
 
             <div class="dignity-item">
                 <div class="dignity-item-img-container">
@@ -76,7 +98,8 @@
                 </div>
                 <h4 class="dignity-item-heading">Easiest To Use</h4>
                 <p class="dignity-item-discription">
-                    You only need 1 account to do all Bitcoin transactions whether it is buying, selling, investing or trading.
+                    You only need 1 account to do all Bitcoin transactions whether it is buying, selling, investing or
+                    trading.
                 </p>
             </div>
 
@@ -86,22 +109,363 @@
                 </div>
                 <h4 class="dignity-item-heading">Fastest Mining</h4>
                 <p class="dignity-item-discription">
-                    The Rupiah deposit can be processed instantly and Rupiah withdrawal is processed in less than 1 business day.
+                    The Rupiah deposit can be processed instantly and Rupiah withdrawal is processed in less than 1
+                    business day.
                 </p>
             </div>
 
         </div>
 
-        <div class="paid-container">
+        <div class="paid-container" id="pricing">
+
             <h2 class="paid-heading">
                 Paid plan starts with a 7-day free trial, No credit card required
             </h2>
+
+            <div class="tabs-button">
+
+                <ul class="tabs-button-list">
+
+                    <li class="tabs-button-item active">
+                        <a href="" class="tabs-button-link">MONTHLY</a>
+                    </li>
+
+                    <li class="tabs-button-item">
+                        <a href="" class="tabs-button-link">YEARLY - 2 MONTH FREE</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="tabs-contant-container">
+
+                <div class="tabs-list active">
+
+                    <div class="tabs-list-item">
+                        <h3 class="tabs-list-heading">Starter</h3>
+                        <p class="tabs-list-price">$10</p>
+                        <span class="tabs-list-price-discription">Per Month</span>
+                        <ul class="tabs-list-services-list">
+                            <li class="tabs-list-services-item">
+                                1 Pixel ID*
+                            </li>
+                            <li class="tabs-list-services-item">
+                                URL
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Up to 200 shortened links / month
+                            </li>
+                        </ul>
+                        <a href="#" class="tabs-list-item-button button">START FREE TRIAL</a>
+                    </div>
+
+                    <div class="tabs-list-item active">
+                        <h3 class="tabs-list-heading">Professional</h3>
+                        <p class="tabs-list-price">$29</p>
+                        <span class="tabs-list-price-discription">Per Month</span>
+                        <ul class="tabs-list-services-list">
+                            <li class="tabs-list-services-item">
+                                5 Pixel ID*
+                            </li>
+                            <li class="tabs-list-services-item">
+                                1 Custom URL
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Up to 1,000 shortened links / month
+                            </li>
+                            <li class="tabs-list-services-item">
+                                5 Team Member
+                            </li>
+                        </ul>
+                        <a href="#" class="tabs-list-item-button button">START FREE TRIAL</a>
+                    </div>
+
+                    <div class="tabs-list-item">
+                        <h3 class="tabs-list-heading">Business</h3>
+                        <p class="tabs-list-price">$49</p>
+                        <span class="tabs-list-price-discription">Per Month</span>
+                        <ul class="tabs-list-services-list">
+                            <li class="tabs-list-services-item">
+                                Unlimited Pixels ID
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Unlimited Custom URL
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Unlimited shortened links / month
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Unlimited Member
+                            </li>
+                        </ul>
+                        <a href="#" class="tabs-list-item-button button">START FREE TRIAL</a>
+                    </div>
+
+                </div>
+
+                <div class="tabs-list">
+
+                    <div class="tabs-list-item">
+                        <h3 class="tabs-list-heading">Starter</h3>
+                        <p class="tabs-list-price">$110</p>
+                        <span class="tabs-list-price-discription">Per Year</span>
+                        <ul class="tabs-list-services-list">
+                            <li class="tabs-list-services-item">
+                                1 Pixel ID*
+                            </li>
+                            <li class="tabs-list-services-item">
+                                URL
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Up to 200 shortened links / month
+                            </li>
+                        </ul>
+                        <a href="#" class="tabs-list-item-button button">START FREE TRIAL</a>
+                    </div>
+
+                    <div class="tabs-list-item active">
+                        <h3 class="tabs-list-heading">Professional</h3>
+                        <p class="tabs-list-price">$229</p>
+                        <span class="tabs-list-price-discription">Per Year</span>
+                        <ul class="tabs-list-services-list">
+                            <li class="tabs-list-services-item">
+                                5 Pixel ID*
+                            </li>
+                            <li class="tabs-list-services-item">
+                                1 Custom URL
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Up to 1,000 shortened links / month
+                            </li>
+                            <li class="tabs-list-services-item">
+                                5 Team Member
+                            </li>
+                        </ul>
+                        <a href="#" class="tabs-list-item-button button">START FREE TRIAL</a>
+                    </div>
+
+                    <div class="tabs-list-item">
+                        <h3 class="tabs-list-heading">Business</h3>
+                        <p class="tabs-list-price">$349</p>
+                        <span class="tabs-list-price-discription">Per Year</span>
+                        <ul class="tabs-list-services-list">
+                            <li class="tabs-list-services-item">
+                                Unlimited Pixels ID
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Unlimited Custom URL
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Unlimited shortened links / month
+                            </li>
+                            <li class="tabs-list-services-item">
+                                Unlimited Member
+                            </li>
+                        </ul>
+                        <a href="#" class="tabs-list-item-button button">START FREE TRIAL</a>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
+        <section class="reviews" id="testimonials">
+            <h2 class="reviews-heading">
+                what Customer Say
+            </h2>
+            <div class="background-block"></div>
+            <div class="reviews-slider">
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "I started driving with Uber because I liked the idea that my own car could make me money. After
+                        just about a couple weeks, I saw that this was something I wanted to do permanently."
+                    </p>
+                    <p class="reviews-author">
+                        Brandon Roger / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "I wanted something where I could meet new people and get out of the house. Uber has helped with
+                        both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
+                    </p>
+                    <p class="reviews-author">
+                        Sean Walker / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "Uber enables me to have the creative freedom for baking my cakes and also driving on the side
+                        so I can make more money and also have my dream job."
+                    </p>
+                    <p class="reviews-author">
+                        Jenny Harra / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "I started driving with Uber because I liked the idea that my own car could make me money. After
+                        just about a couple weeks, I saw that this was something I wanted to do permanently."
+                    </p>
+                    <p class="reviews-author">
+                        Brandon Roger / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "Uber enables me to have the creative freedom for baking my cakes and also driving on the side
+                        so I can make more money and also have my dream job."
+                    </p>
+                    <p class="reviews-author">
+                        Jenny Harra / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "I started driving with Uber because I liked the idea that my own car could make me money. After
+                        just about a couple weeks, I saw that this was something I wanted to do permanently."
+                    </p>
+                    <p class="reviews-author">
+                        Brandon Roger / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+                <div class="reviews-slider-element">
+                    <div class="slider-element-quotes">
+                        <span class="icon-qoutes"></span>
+                        <span class="icon-qoutes"></span>
+                    </div>
+                    <p class="reviews-content">
+                        "Uber enables me to have the creative freedom for baking my cakes and also driving on the side
+                        so I can make more money and also have my dream job."
+                    </p>
+                    <p class="reviews-author">
+                        Jenny Harra / <span class="reviews-organization">OWW Studio</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners" id="client">
+
+            <h2 class="partners-heading">
+                WORKS WITH ANY PLATFORM
+            </h2>
+
+            <div class="partners-img-container">
+
+                <ul class="partners-list">
+
+                    <li class="partners-item">
+                        <a href="#" class="partners-link">
+                            <img src="img/amazon.png" alt="amazon" class="partners-img">
+                        </a>
+                    </li>
+
+                    <li class="partners-item">
+                        <a href="#" class="partners-link">
+                            <img src="img/etsy.png" alt="etsy" class="partners-img">
+                        </a>
+                    </li>
+
+                    <li class="partners-item">
+                        <a href="#" class="partners-link">
+                            <img src="img/bank.png" alt="clickbank" class="partners-img">
+                        </a>
+                    </li>
+
+                    <li class="partners-item">
+                        <a href="#" class="partners-link">
+                            <img src="img/partner-img.png" alt="xz" class="partners-img">
+                        </a>
+                    </li>
+
+                    <li class="partners-item">
+                        <a href="#" class="partners-link">
+                            <img src="img/youtube.png" alt="youtube" class="partners-img">
+                        </a>
+                    </li>
+
+                    <li class="partners-item">
+                        <a href="#" class="partners-link">
+                            <img src="img/kickstarter.png" alt="kickstarter" class="partners-img">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
 
     </div>
 </main>
 
+<footer class="footer">
+    <h2 class="copyright">
+        &copy; 2018 autocryp All Right Reserved
+    </h2>
+
+    <ul class="footer-nav">
+
+        <li class="footer-nav-item">
+            <a href="#benefit" class="footer-nav-link">Benefit</a>
+        </li>
+
+        <li class="footer-nav-item">/</li>
+
+        <li class="footer-nav-item">
+            <a href="#pricing" class="footer-nav-link">Pricing</a>
+        </li>
+
+        <li class="footer-nav-item">/</li>
+
+        <li class="footer-nav-item">
+            <a href="#testimonials" class="footer-nav-link">Testimonials</a>
+        </li>
+
+        <li class="footer-nav-item">/</li>
+
+        <li class="footer-nav-item">
+            <a href="#client" class="footer-nav-link">Clients</a>
+        </li>
+    </ul>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/slick/slick.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

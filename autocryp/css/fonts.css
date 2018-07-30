@@ -1,4 +1,9 @@
-/*@font-face {*/
-    /*font-family: ;*/
-    /*src: ;*/
-/*}*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot');
+    src:  url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
