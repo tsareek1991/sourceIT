@@ -116,10 +116,8 @@ window.onload = function () {
 
     window.addEventListener('click', function (e) {
         if(e.target == burgerButton || e.target == burgerButton.firstElementChild || e.target == document.getElementById('header-nav') || e.target == document.getElementById('header-nav').firstElementChild || e.target == document.getElementById('header-nav').firstElementChild.firstElementChild ){
-            console.log(e.target)
             return;
         }else {
-            console.log(e.target)
             burgerButton.classList.remove('burger-open');
             document.getElementById('header-nav').classList.remove('header-navigation-open')
         }
